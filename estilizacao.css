@@ -1,0 +1,15 @@
+h1 {
+  color: rgb(3, 93, 211);
+  text-align: center;
+}
+
+#info {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 600px; /* Ajuste a altura conforme necessário */
+  background-color: gray;
+  width: 500px; /* Defina a largura */
+  margin: 0 auto;
+  border-radius: 5%;
+}
