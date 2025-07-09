@@ -1,15 +1,58 @@
-h1 {
-  color: rgb(3, 93, 211);
-  text-align: center;
+body {
+  margin: 0;
+  display: flex; /* Transforma o body em um container flex */
+  justify-content: center; /* Centraliza horizontalmente o conteúdo */
+  align-items: center; /* Centraliza verticalmente o conteúdo */
+  min-height: 100vh; /* Garante que o body ocupe 100% da altura da viewport */
+  background-color: #f0f0f0; /* Apenas para visualização */
 }
 
-#info {
+.info {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex; /* Transforma o container externo em um container flex */
+  justify-content: center; /* Centraliza horizontalmente o conteúdo interno */
+  align-items: center; /* Centraliza verticalmente o conteúdo interno */
+  flex-direction: column; /* Organiza os itens em coluna */
+  max-width: 90%; /* Limita a largura para responsividade */
+  min-width: 300px;
+}
+
+.form {
+  background-color: #e9ecef;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center; /* Centraliza o texto e elementos inline-block dentro do formulário */
+}
+
+form {
   display: flex;
-  justify-content: center;
-  align-items: start;
-  height: 600px; /* Ajuste a altura conforme necessário */
-  background-color: gray;
-  width: 500px; /* Defina a largura */
-  margin: 0 auto;
-  border-radius: 5%;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
