@@ -34,7 +34,7 @@ form {
 }
 
 input[type="text"],
-input[type="email"],
+input[type="number"],
 textarea {
   padding: 8px;
   border: 1px solid #ccc;

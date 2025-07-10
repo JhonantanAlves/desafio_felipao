@@ -1,4 +1,15 @@
-//## Objetivo
+let heroi = document.getElementById("heroi");
 
-//Crie uma variável para armazenar o nome e a quantidade de experiência (XP) de um herói,
-//depois utilize uma estrutura de decisão para apresentar alguma das mensagens abaixo:
+let experiencia = document.getElementById("exp");
+
+let botao = document.getElementById("calcular");
+
+botao.addEventListener("click", () => {
+  event.preventDefault();
+  let resultadoHeroi = heroi.value;
+  let resultadoExperiencia = experiencia.value;
+  console.log(resultadoHeroi, resultadoExperiencia);
+
+  document.getElementById("heroi").value = "";
+  document.getElementById("exp").value = "";
+});
