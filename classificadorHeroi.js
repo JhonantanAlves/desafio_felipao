@@ -4,8 +4,7 @@ let experiencia = document.getElementById("exp");
 
 let botao = document.getElementById("calcular");
 
-botao.addEventListener("click", (event) => {
-  event.preventDefault();
+function classificarHeroi() {
   let nomeDoHeroi = heroi.value;
   let experienciaNumerica = parseInt(experiencia.value);
 
@@ -76,6 +75,12 @@ botao.addEventListener("click", (event) => {
   } else {
     alert("Preencha o campo corretamente");
   }
+
   document.getElementById("heroi").value = "";
   document.getElementById("exp").value = "";
+}
+
+botao.addEventListener("click", (event) => {
+  event.preventDefault();
+  classificarHeroi();
 });
